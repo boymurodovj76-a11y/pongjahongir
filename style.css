@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #080b20, #172554);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.game {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+h1 {
+    color: #00f5d4;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-shadow: 0 0 12px #00f5d4;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.scoreboard b {
+    color: #00f5d4;
+}
+
+.game-area {
+    position: relative;
+    width: 100%;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 3px solid #00f5d4;
+    border-radius: 12px;
+    background: #080b20;
+    box-shadow: 0 0 25px #00f5d455;
+    touch-action: none;
+    cursor: none;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    padding: 22px 12px;
+    background: rgba(8, 11, 32, 0.96);
+    border: 2px solid #00f5d4;
+    border-radius: 15px;
+}
+
+#message h2 {
+    color: #00f5d4;
+    margin-bottom: 12px;
+}
+
+#message p {
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+button {
+    padding: 13px 20px;
+    background: #00f5d4;
+    color: #080b20;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8ffff0;
+}
+
+.controls {
+    margin: 14px 0 20px;
+    color: #cbd5e1;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+footer {
+    padding: 17px 8px;
+    background: #ffffff0d;
+    border: 1px solid #ffffff25;
+    border-radius: 12px;
+}
+
+footer span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #94a3b8;
+}
+
+footer h2 {
+    color: #00f5d4;
+    font-size: clamp(15px, 4.5vw, 21px);
+    letter-spacing: 1px;
+}
+
+@media (max-width: 450px) {
+    body {
+        padding: 12px 8px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
